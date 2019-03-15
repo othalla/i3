@@ -31,8 +31,6 @@ bindsym $mod+Return exec i3-sensible-terminal
 # BACKGROUND IMAGE
 exec feh --bg-scale Pictures/DARK_WALLPAPER.jpg
 # TRAYS Programs
-exec wicd-client --tray &
-exec "blueman-applet &"
 exec "sleep 5 && sudo rfkill block bluetooth"
 exec "sleep 2 && sudo rfkill block wwan"
 
