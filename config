@@ -14,7 +14,7 @@ bindsym $mod+3 workspace $ws3
 bindsym $mod+4 workspace $ws4
 bindsym $mod+5 workspace $ws5
 assign [class="urxvt"] $ws1
-assign [class="Google-chrome"] $ws2
+assign [class="Chromium"] $ws2
 assign [class="Thunderbird"] $ws3
 assign [class="Deluge"] $ws4
 assign [class="vlc"] $ws5
@@ -33,9 +33,10 @@ bindsym $mod+Return exec i3-sensible-terminal
 # BACKGROUND IMAGE
 exec feh --bg-scale Pictures/DARK_WALLPAPER.jpg
 # TRAYS Programs
-exec pasystray &
-exec udiskie &
-exec nm-applet &
+exec wicd-client --tray &
+#exec wicd-client -a &
+#exec udiskie &
+#exec nm-applet &
 exec "blueman-applet &"
 exec "sleep 5 && sudo rfkill block bluetooth"
 exec "sleep 2 && sudo rfkill block wwan"
@@ -159,7 +160,7 @@ bar {
 #	tray_output eDP1
   font pango:DejaVu sans Mono 10
   separator_symbol "|"
-  status_command i3status --config ~/.i3status.conf
+  status_command i3status --config ~/.config/i3/i3status.conf
 }
 
 # Sreen brightness controls
@@ -185,7 +186,7 @@ mode "$mode_system" {
 bindsym $mod+o mode "$mode_system"
 
 # Chromium shortcut
-bindsym $mod+c exec google-chrome-stable
+bindsym $mod+c exec chromium
 
 # auto locking
 exec --no-startup-id xset dpms 60
