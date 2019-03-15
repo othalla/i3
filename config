@@ -6,11 +6,12 @@ set $ws3 3:Tbd
 set $ws5 4:VLC
 #
 # then use them like so:
-#
 bindsym $mod+1 workspace $ws1
 bindsym $mod+2 workspace $ws2
 bindsym $mod+3 workspace $ws3
 bindsym $mod+4 workspace $ws4
+
+# Autoasign softwares to specific workspace
 assign [class="urxvt"] $ws1
 assign [class="Chromium"] $ws2
 assign [class="Thunderbird"] $ws3
@@ -31,9 +32,6 @@ bindsym $mod+Return exec i3-sensible-terminal
 exec feh --bg-scale Pictures/DARK_WALLPAPER.jpg
 # TRAYS Programs
 exec wicd-client --tray &
-#exec wicd-client -a &
-#exec udiskie &
-#exec nm-applet &
 exec "blueman-applet &"
 exec "sleep 5 && sudo rfkill block bluetooth"
 exec "sleep 2 && sudo rfkill block wwan"
@@ -154,7 +152,6 @@ bar {
       active_workspace   #333333 #5f676a #ffffff
       urgent_workspace   #aa0000 #990000 #ffffff
   }
-#	tray_output eDP1
   font pango:DejaVu sans Mono 10
   separator_symbol "|"
   status_command i3status --config ~/.config/i3/i3status.conf
