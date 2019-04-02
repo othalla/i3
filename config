@@ -15,7 +15,8 @@ bindsym $mod+4 workspace $ws4
 assign [class="urxvt"] $ws1
 assign [class="Chromium"] $ws2
 assign [class="Thunderbird"] $ws3
-assign [class="vlc"] $ws4
+assign [class="libreoffice"] $ws4
+assign [class="vlc"] $ws5
 
 # META KEY
 set $mod Mod4
