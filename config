@@ -180,6 +180,8 @@ bindsym $mod+o mode "$mode_system"
 
 # Chromium shortcut
 bindsym $mod+c exec chromium
+bindsym $mod+t exec thunderbird
+#bindsym $mod+l exec libreoffice
 
 # auto locking
 exec --no-startup-id xset dpms 60
