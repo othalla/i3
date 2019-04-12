@@ -11,6 +11,7 @@ bindsym $mod+2 workspace $ws2
 bindsym $mod+3 workspace $ws3
 bindsym $mod+4 workspace $ws4
 
+
 # Autoasign softwares to specific workspace
 assign [class="urxvt"] $ws1
 assign [class="Chromium"] $ws2
@@ -27,7 +28,7 @@ floating_modifier $mod
 new_window 1pixel
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec kitty
 
 # BACKGROUND IMAGE
 exec feh --bg-scale Pictures/DARK_WALLPAPER.jpg
