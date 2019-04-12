@@ -1,19 +1,21 @@
 # i3 config file (v4)
 # # customize workspace names
-set $ws1 1:URx
-set $ws2 2:Chm
-set $ws3 3:Tbd
-set $ws5 4:VLC
+set $ws1 1:Kitty
+set $ws2 2:Chromium
+set $ws3 3:Thunderbird
+set $ws3 4:libreoffice
+set $ws5 5:VLC
 #
 # then use them like so:
 bindsym $mod+1 workspace $ws1
 bindsym $mod+2 workspace $ws2
 bindsym $mod+3 workspace $ws3
 bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
 
 
 # Autoasign softwares to specific workspace
-assign [class="urxvt"] $ws1
+assign [class="kitty"] $ws1
 assign [class="Chromium"] $ws2
 assign [class="Thunderbird"] $ws3
 assign [class="libreoffice"] $ws4
