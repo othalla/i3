@@ -30,7 +30,7 @@ floating_modifier $mod
 new_window 1pixel
 
 # start a terminal
-bindsym $mod+Return exec kitty
+bindsym $mod+Return exec ~/.local/kitty.app/bin/kitty
 
 # BACKGROUND IMAGE
 exec feh --bg-scale Pictures/DARK_WALLPAPER.jpg
